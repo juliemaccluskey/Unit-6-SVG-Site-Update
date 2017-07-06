@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+/*GLOBAL STYLES-------------------------------------------------------*/
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background: url('svgs/background.svg') #edeff0;
+}
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+p {
+  max-width: 450px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: center;
+}
+
+
+/*NAV STYLES-----------------------------------------*/
+
+a {
+  text-decoration: none;
+  color: #2d3339;
+  font-weight: 700;
+	
+  }
+  a:hover {
+    color: #39add1;
+  }
+
+header {
+  padding-top: 10px;
+	
+}
+  header nav {
+    padding-bottom: 50px;
+    text-align: center;
+	
+	
+  }
+
+header nav ul {
+	height: 50px;
+	
+	 
+}
+  header nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+	
+  }
+
+  header nav ul li a svg {
+    height: 13px;
+	
+  }
+
+.icon {
+	
+	transition: transform .5s ease-in-out;
+	transform-origin: 50% 50%;	
+}
+
+.icon:hover {
+	transform: scale(1.7);
+	fill: #39add1;	
+}
+
+.icon .black:hover {
+	fill: #39add1;
+}
+
+/*LOGO STYLES-----------------------------------------------*/
+.logo {
+	width: 140px;
+	height: 120px;
+}
+
+.logoTitle {
+	display: none;
+}
+
+.corgi-svg {
+	width: 170px;
+	height: 170px;
+}
+
+
+
+/*CORGI STYLES-----------------------------------------------------*/
+
+main {
+  padding-top: 50px;
+}
+  main h2 {
+  font-size: 28px;
+}
+  main ul {
+    padding: 0;
+  }
+    main li {
+      display: inline-block;
+      color: #ba8058;
+      margin-right: 10px;
+    }
+    
+main li svg {
+	margin-bottom: 20px;
+}
+      main li span {
+        margin-left: -40px;
+      }
+      main li:last-child {
+        margin-right: 0;
+      }
+
+#corgi-1 .red {
+	fill: #828859;
+}
+
+#corgi-2 .fawn {
+	fill: #7a5988;
+}
+
+#corgi-3 .sable {
+	fill: #db8947;
+}
+
+#corgi-4 .charcoal {
+	fill: #3c858c;
+}
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+
+
+@media (max-width: 425px) {
+	
+	header nav ul{
+		padding-left: 0;
+		text-align: center;
+		
+	}
+	
+	header nav ul li {
+		margin-right: 0;
+	}
+	.logoTitle {
+		display: block;
+		font-size: 1.2em;
+		margin-bottom: 0;
+		color: #eaaa7f;
+}
+	.logo .fawn {
+		opacity: 0;
+	}
+	
+	p {
+	 width: 90%;
+	 text-align: center;
+	}
+	
+	h1 {
+		font-size: 1.5em;
+	}
+	
+	main h2 {
+		font-size: 1.25em;
+}
+	
+	main li {
+		margin-right: 0;
+		margin-left: 20px;
+	}
+
+}
+
+
+
+
