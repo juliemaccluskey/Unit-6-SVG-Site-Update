@@ -62,23 +62,26 @@ header nav ul {
 
   header nav ul li a svg {
     height: 13px;
+	padding: 1em 0 1em 1em;
 	
   }
 
-.icon {
-	
+span {
+	float: right;
+	padding-top: 1em;
+	margin-right: 3em;
+}
+
+.black {
 	transition: transform .5s ease-in-out;
-	transform-origin: 50% 50%;	
+	transform-origin: 50% 50%;
 }
 
-.icon:hover {
+a:hover .black {
 	transform: scale(1.7);
-	fill: #39add1;	
-}
-
-.icon .black:hover {
 	fill: #39add1;
 }
+
 
 /*LOGO STYLES-----------------------------------------------*/
 .logo {
@@ -151,6 +154,10 @@ footer {
 
 @media (max-width: 425px) {
 	
+	nav {
+		margin-left: -20px;
+	}
+	
 	header nav ul{
 		padding-left: 0;
 		text-align: center;
@@ -160,6 +167,12 @@ footer {
 	header nav ul li {
 		margin-right: 0;
 	}
+	
+	span {
+		margin-right: 0;
+	}
+	
+
 	.logoTitle {
 		display: block;
 		font-size: 1.2em;
